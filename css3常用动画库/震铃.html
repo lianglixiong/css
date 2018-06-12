@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="animation.css">
+<style>
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		margin: 200px auto;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background: #ccc;
+		margin-left: 10px;
+		/*margin: 200px auto;*/
+	}
+	
+	/* 震铃 */
+	.a-ring{
+		-webkit-animation-name:ring;
+		-moz-animation-name:ring;
+		-ms-animation-name:ring;
+		animation-name:ring;
+	}
+	/* 震铃 */
+	@-webkit-keyframes ring{
+	    0%{-webkit-transform:scale(1);}
+	    10%,20%{-webkit-transform:scale(0.9) rotate(-3deg);}
+	    30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);}
+	    40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);}
+	    100%{-webkit-transform:scale(1) rotate(0);}
+	}
+	@-moz-keyframes ring{
+	    0%{-moz-transform:scale(1);}
+	    10%,20%{-moz-transform:scale(0.9) rotate(-3deg);}
+	    30%,50%,70%,90%{-moz-transform:scale(1.1) rotate(3deg);}
+	    40%,60%,80%{-moz-transform:scale(1.1) rotate(-3deg);}
+	    100%{-moz-transform:scale(1) rotate(0);}
+	}
+	@-ms-keyframes ring{
+	    0%{-ms-transform:scale(1);}
+	    10%,20%{-ms-transform:scale(0.9) rotate(-3deg);}
+	    30%,50%,70%,90%{-ms-transform:scale(1.1) rotate(3deg);}
+	    40%,60%,80%{-ms-transform:scale(1.1) rotate(-3deg);}
+	    100%{-ms-transform:scale(1) rotate(0);}
+	}
+	@keyframes ring{
+	    0%{transform:scale(1);}
+	    10%,20%{transform:scale(0.9) rotate(-3deg);}
+	    30%,50%,70%,90%{transform:scale(1.1) rotate(3deg);}
+	    40%,60%,80%{transform:scale(1.1) rotate(-3deg);}
+	    100%{transform:scale(1) rotate(0);}
+	}
+	
+	
+</style>
+
+<body>
+	<div class="content">
+		<div class="box a-ring"></div>
+		
+	</div>
+	
+</body>
+</html>

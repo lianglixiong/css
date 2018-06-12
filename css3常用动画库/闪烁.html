@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="animation.css">
+<style>
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		margin: 200px auto;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background: #ccc;
+		margin-left: 10px;
+		/*margin: 200px auto;*/
+	}
+	
+	/* 闪烁 */
+	.a-flash{
+		-webkit-animation-name:flash;
+		-moz-animation-name:flash;
+		-ms-animation-name:flash;
+		animation-name:flash;
+	}
+	/* 闪烁 */
+	@-webkit-keyframes flash{
+	    0%,50%,100%{opacity:1;}
+	    25%,75%{opacity:0;}
+	}
+	@-moz-keyframes flash{
+	    0%,50%,100%{opacity:1;}
+	    25%,75%{opacity:0;}
+	}
+	@-ms-keyframes flash{
+	    0%,50%,100%{opacity:1;}
+	    25%,75%{opacity:0;}
+	}
+	@keyframes flash{
+	    0%,50%,100%{opacity:1;}
+	    25%,75%{opacity:0;}
+	}
+	
+</style>
+
+<body>
+	<div class="content">
+		<div class="box a-flash"></div>
+		
+	</div>
+	
+</body>
+</html>

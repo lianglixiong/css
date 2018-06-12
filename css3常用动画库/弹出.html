@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="animation.css">
+<style>
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		margin: 200px auto;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background: #ccc;
+		margin-left: 10px;
+		/*margin: 200px auto;*/
+	}
+	
+	/* 弹出 */
+	.a-bounceout{
+		-webkit-animation-name:bounceout;
+		-moz-animation-name:bounceout;
+		-ms-animation-name:bounceout;
+		animation-name:bounceout;
+	}
+	/* 弹出 */
+	@-webkit-keyframes bounceout{
+	    0%{-webkit-transform:scale(1);}
+	    25%{-webkit-transform:scale(0.95);}
+	    50%{opacity:1;-webkit-transform:scale(1.1);}
+	    100%{opacity:0;-webkit-transform:scale(0.3);}
+	}
+	@-moz-keyframes bounceout{
+	    0%{-moz-transform:scale(1);}
+	    25%{-moz-transform:scale(0.95);}
+	    50%{opacity:1;-moz-transform:scale(1.1);}
+	    100%{opacity:0;-moz-transform:scale(0.3);}
+	}
+	@-ms-keyframes bounceout{
+	    0%{-ms-transform:scale(1);}
+	    25%{-ms-transform:scale(0.95);}
+	    50%{opacity:1;-ms-transform:scale(1.1);}
+	    100%{opacity:0;-ms-transform:scale(0.3);}
+	}
+	@keyframes bounceout{
+	    0%{transform:scale(1);}
+	    25%{transform:scale(0.95);}
+	    50%{opacity:1;transform:scale(1.1);}
+	    100%{opacity:0;transform:scale(0.3);}
+	}
+	
+	/* 弹出-向上 */
+	.a-bounceoutT{
+		-webkit-animation-name:bounceoutT;
+		-moz-animation-name:bounceoutT;
+		-ms-animation-name:bounceoutT;
+		animation-name:bounceoutT;
+	}
+	/* 弹出-向上*/
+	@-webkit-keyframes bounceoutT{
+	    0%{-webkit-transform:translateY(0);}
+	    20%{opacity:1;-webkit-transform:translateY(20px);}
+	    100%{opacity:0;-webkit-transform:translateY(-100px);}
+	}
+	@-moz-keyframes bounceoutT{
+	    0%{-moz-transform:translateY(0);}
+	    20%{opacity:1;-moz-transform:translateY(20px);}
+	    100%{opacity:0;-moz-transform:translateY(-100px);}
+	}
+	@-ms-keyframes bounceoutT{
+	    0%{-ms-transform:translateY(0);}
+	    20%{opacity:1;-ms-transform:translateY(20px);}
+	    100%{opacity:0;-ms-transform:translateY(-100px);}
+	}
+	@keyframes bounceoutT{
+	    0%{transform:translateY(0);}
+	    20%{opacity:1;transform:translateY(20px);}
+	    100%{opacity:0;transform:translateY(-100px);}
+	}
+
+	/* 弹出-向右 */
+	.a-bounceoutR{
+		-webkit-animation-name:bounceoutR;
+		-moz-animation-name:bounceoutR;
+		-ms-animation-name:bounceoutR;
+		animation-name:bounceoutR;
+	}
+	/* 弹出-向右*/
+	@-webkit-keyframes bounceoutR{
+	    0%{-webkit-transform:translateX(0);}
+	    20%{opacity:1;-webkit-transform:translateX(-20px);}
+	    100%{opacity:0;-webkit-transform:translateX(100px);}
+	}
+	@-moz-keyframes bounceoutR{
+	    0%{-moz-transform:translateX(0);}
+	    20%{opacity:1;-moz-transform:translateX(-20px);}
+	    100%{opacity:0;-moz-transform:translateX(100px);}
+	}
+	@-ms-keyframes bounceoutR{
+	    0%{-ms-transform:translateX(0);}
+	    20%{opacity:1;-ms-transform:translateX(-20px);}
+	    100%{opacity:0;-ms-transform:translateX(100px);}
+	}
+	@keyframes bounceoutR{
+	    0%{transform:translateX(0);}
+	    20%{opacity:1;transform:translateX(-20px);}
+	    100%{opacity:0;transform:translateX(100px);}
+	}
+
+	/* 弹出-向下 */
+	.a-bounceoutB{
+		-webkit-animation-name:bounceoutB;
+		-moz-animation-name:bounceoutB;
+		-ms-animation-name:bounceoutB;
+		animation-name:bounceoutB;
+	}
+	/* 弹出-向下 */
+	@-webkit-keyframes bounceoutB{
+	    0%{-webkit-transform:translateY(0);}
+	    20%{opacity:1;-webkit-transform:translateY(-20px);}
+	    100%{opacity:0;-webkit-transform:translateY(100px);}
+	}
+	@-moz-keyframes bounceoutB{
+	    0%{-moz-transform:translateY(0);}
+	    20%{opacity:1;-moz-transform:translateY(-20px);}
+	    100%{opacity:0;-moz-transform:translateY(100px);}
+	}
+	@-ms-keyframes bounceoutB{
+	    0%{-ms-transform:translateY(0);}
+	    20%{opacity:1;-ms-transform:translateY(-20px);}
+	    100%{opacity:0;-ms-transform:translateY(100px);}
+	}
+	@keyframes bounceoutB{
+	    0%{transform:translateY(0);}
+	    20%{opacity:1;transform:translateY(-20px);}
+	    100%{opacity:0;transform:translateY(100px);}
+	}
+
+	/* 弹出-向左 */
+	.a-bounceoutL{
+		-webkit-animation-name:bounceoutL;
+		-moz-animation-name:bounceoutL;
+		-ms-animation-name:bounceoutL;
+		animation-name:bounceoutL;
+	}
+	/* 弹出-向左 */
+	@-webkit-keyframes bounceoutL{
+	    0%{-webkit-transform:translateX(0);}
+	    20%{opacity:1;-webkit-transform:translateX(20px);}
+	    100%{opacity:0;-webkit-transform:translateX(-100px);}
+	}
+	@-moz-keyframes bounceoutL{
+	    0%{-moz-transform:translateX(0);}
+	    20%{opacity:1;-moz-transform:translateX(20px);}
+	    100%{opacity:0;-moz-transform:translateX(-100px);}
+	}
+	@-ms-keyframes bounceoutL{
+	    0%{-ms-transform:translateX(0);}
+	    20%{opacity:1;-ms-transform:translateX(20px);}
+	    100%{opacity:0;-ms-transform:translateX(-100px);}
+	}
+	@keyframes bounceoutL{
+	    0%{transform:translateX(0);}
+	    20%{opacity:1;transform:translateX(20px);}
+	    100%{opacity:0;transform:translateX(-200px);}
+	}
+	
+</style>
+<body>
+	<div class="content">
+		<div class="box a-bounceout"></div>
+		<div class="box a-bounceoutT"></div>
+		<div class="box a-bounceoutR"></div>
+		<div class="box a-bounceoutB"></div>
+		<div class="box a-bounceoutL"></div>
+	</div>
+	
+</body>
+</html>

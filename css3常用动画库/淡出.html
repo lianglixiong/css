@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="animation.css">
+<style>
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		margin: 200px auto;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background: #ccc;
+		margin-left: 10px;
+		/*margin: 200px auto;*/
+	}
+
+	/* 淡出 */
+	.a-fadeout{
+		-webkit-animation-name:fadeout;
+		-moz-animation-name:fadeout;
+		-ms-animation-name:fadeout;
+		animation-name:fadeout;
+	}
+	/* 淡出 */
+	@-webkit-keyframes fadeout{
+	    0%{opacity:1;}
+	    100%{opacity:0;}
+	}
+	@-moz-keyframes fadeout{
+	    0%{opacity:1;}
+	    100%{opacity:0;}
+	}
+	@-ms-keyframes fadeout{
+	    0%{opacity:1;}
+	    100%{opacity:0;}
+	}
+	@keyframes fadeout{
+	    0%{opacity:1;}
+	    100%{opacity:0;}
+	}
+
+	/* 淡出-向上 */
+	.a-fadeoutT{
+		-webkit-animation-name:fadeoutT;
+		-moz-animation-name:fadeoutT;
+		-ms-animation-name:fadeoutT;
+		animation-name:fadeoutT;
+	}
+	/* 淡出-向上 */
+	@-webkit-keyframes fadeoutT{
+	    0%{opacity:1;-webkit-transform:translateY(0);}
+	    100%{opacity:0;-webkit-transform:translateY(-100px);}
+	}
+	@-moz-keyframes fadeoutT{
+	    0%{opacity:1;-moz-transform:translateY(0);}
+	    100%{opacity:0;-moz-transform:translateY(-100px);}
+	}
+	@-ms-keyframes fadeoutT{
+	    0%{opacity:1;-ms-transform:translateY(0);}
+	    100%{opacity:0;-ms-transform:translateY(-100px);}
+	}
+	@keyframes fadeoutT{
+	    0%{opacity:1;transform:translateY(0);}
+	    100%{opacity:0;transform:translateY(-100px);}
+	}
+	
+	/* 淡出-向右 */
+	.a-fadeoutR{
+		-webkit-animation-name:fadeoutR;
+		-moz-animation-name:fadeoutR;
+		-ms-animation-name:fadeoutR;
+		animation-name:fadeoutR;
+	}
+	/* 淡出-向右 */
+	@-webkit-keyframes fadeoutR{
+	    0%{opacity:1;-webkit-transform:translateX(0);}
+	    100%{opacity:0;-webkit-transform:translateX(100px);}
+	}
+	@-moz-keyframes fadeoutR{
+	    0%{opacity:1;-moz-transform:translateX(0);}
+	    100%{opacity:0;-moz-transform:translateX(100px);}
+	}
+	@-ms-keyframes fadeoutR{
+	    0%{opacity:1;-ms-transform:translateX(0);}
+	    100%{opacity:0;-ms-transform:translateX(100px);}
+	}
+	@keyframes fadeoutR{
+	    0%{opacity:1;transform:translateX(0);}
+	    100%{opacity:0;transform:translateX(100px);}
+	}
+
+	/* 淡出-向下 */
+	.a-fadeoutB{
+		-webkit-animation-name:fadeoutB;
+		-moz-animation-name:fadeoutB;
+		-ms-animation-name:fadeoutB;
+		animation-name:fadeoutB;
+	}
+	/* 淡出-向下 */
+	@-webkit-keyframes fadeoutB{
+	    0%{opacity:1;-webkit-transform:translateY(0);}
+	    100%{opacity:0;-webkit-transform:translateY(100px);}
+	}
+	@-moz-keyframes fadeoutB{
+	    0%{opacity:1;-moz-transform:translateY(0);}
+	    100%{opacity:0;-moz-transform:translateY(100px);}
+	}
+	@-ms-keyframes fadeoutB{
+	    0%{opacity:1;-ms-transform:translateY(0);}
+	    100%{opacity:0;-ms-transform:translateY(100px);}
+	}
+	@keyframes fadeoutB{
+	    0%{opacity:1;transform:translateY(0);}
+	    100%{opacity:0;transform:translateY(100px);}
+	}
+	
+	/* 淡出-向左 */
+	.a-fadeoutL{
+		-webkit-animation-name:fadeoutL;
+		-moz-animation-name:fadeoutL;
+		-ms-animation-name:fadeoutL;
+		animation-name:fadeoutL;
+	}
+	/* 淡出-向左 */
+	@-webkit-keyframes fadeoutL{
+	    0%{opacity:1;-webkit-transform:translateX(0);}
+	    100%{opacity:0;-webkit-transform:translateX(-100px);}
+	}
+	@-moz-keyframes fadeoutL{
+	    0%{opacity:1;-moz-transform:translateX(0);}
+	    100%{opacity:0;-moz-transform:translateX(-100px);}
+	}
+	@-ms-keyframes fadeoutL{
+	    0%{opacity:1;-ms-transform:translateX(0);}
+	    100%{opacity:0;-ms-transform:translateX(-100px);}
+	}
+	@keyframes fadeoutL{
+	    0%{opacity:1;transform:translateX(0);}
+	    100%{opacity:0;transform:translateX(-100px);}
+	}
+	
+</style>
+<body>
+	<div class="content">
+		<div class="box a-fadeout"></div>
+		<div class="box a-fadeoutT"></div>
+		<div class="box a-fadeoutR"></div>
+		<div class="box a-fadeoutB"></div>
+		<div class="box a-fadeoutL"></div>
+	</div>
+	
+</body>
+</html>

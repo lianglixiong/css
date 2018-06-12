@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="animation.css">
+<style>
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		margin: 200px auto;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background: #ccc;
+		margin-left: 10px;
+		/*margin: 200px auto;*/
+	}
+	
+	/* 转出 */
+	.a-rotateout{
+		-webkit-animation-name:rotateout;
+		-moz-animation-name:rotateout;
+		-ms-animation-name:rotateout;
+		animation-name:rotateout;
+	}
+	/* 转出 */
+	@-webkit-keyframes rotateout{
+	    0%{-webkit-transform-origin:center center;-webkit-transform:rotate(0);opacity:1;}
+	    100%{-webkit-transform-origin:center center;-webkit-transform:rotate(200deg);opacity:0;}
+	}
+	@-moz-keyframes rotateout{
+	    0%{-moz-transform-origin:center center;-moz-transform:rotate(0);opacity:1;}
+	    100%{-moz-transform-origin:center center;-moz-transform:rotate(200deg);opacity:0;}
+	}
+	@-ms-keyframes rotateout{
+	    0%{-ms-transform-origin:center center;-ms-transform:rotate(0);opacity:1;}
+	    100%{-ms-transform-origin:center center;-ms-transform:rotate(200deg);opacity:0;}
+	}
+	@keyframes rotateout{
+	    0%{transform-origin:center center;transform:rotate(0);opacity:1;}
+	    100%{transform-origin:center center;transform:rotate(200deg);opacity:0;}
+	}
+
+	/* 转出-向左上 */
+	.a-rotateoutLT{
+		-webkit-animation-name:rotateoutLT;
+		-moz-animation-name:rotateoutLT;
+		-ms-animation-name:rotateoutLT;
+		animation-name:rotateoutLT;
+	}
+	/* 转出-向左上 */
+	@-webkit-keyframes rotateoutLT{
+	    0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
+	    100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(-90deg);opacity:0;}
+	}
+	@-moz-keyframes rotateoutLT{
+	    0%{-moz-transform-origin:left bottom;-moz-transform:rotate(0);opacity:1;}
+	    100%{-moz-transform-origin:left bottom;-moz-transform:rotate(-90deg);opacity:0;}
+	}
+	@-ms-keyframes rotateoutLT{
+	    0%{-ms-transform-origin:left bottom;-ms-transform:rotate(0);opacity:1;}
+	    100%{-ms-transform-origin:left bottom;-ms-transform:rotate(-90deg);opacity:0;}
+	}
+	@keyframes rotateoutLT{
+	    0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+	    100%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0;}
+	}
+
+	/* 转出-向左下 */
+	.a-rotateoutLB{
+		-webkit-animation-name:rotateoutLB;
+		-moz-animation-name:rotateoutLB;
+		-ms-animation-name:rotateoutLB;
+		animation-name:rotateoutLB;
+	}
+	/* 转出-向左下 */
+	@-webkit-keyframes rotateoutLB{
+	    0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
+	    100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(90deg);opacity:0;}
+	}
+	@-moz-keyframes rotateoutLB{
+	    0%{-moz-transform-origin:left bottom;-moz-transform:rotate(0);opacity:1;}
+	    100%{-moz-transform-origin:left bottom;-moz-transform:rotate(90deg);opacity:0;}
+	}
+	@-ms-keyframes rotateoutLB{
+	    0%{-ms-transform-origin:left bottom;-ms-transform:rotate(0);opacity:1;}
+	    100%{-ms-transform-origin:left bottom;-ms-transform:rotate(90deg);opacity:0;}
+	}
+	@keyframes rotateoutLB{
+	    0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+	    100%{transform-origin:left bottom;transform:rotate(90deg);opacity:0;}
+	}
+
+	/* 转出-向右上 */
+	.a-rotateoutRT{
+		-webkit-animation-name:rotateoutRT;
+		-moz-animation-name:rotateoutRT;
+		-ms-animation-name:rotateoutRT;
+		animation-name:rotateoutRT;
+	}
+	/* 转出-向右上 */
+	@-webkit-keyframes rotateoutRT{
+	    0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
+	    100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(90deg);opacity:0;}
+	}
+	@-moz-keyframes rotateoutRT{
+	    0%{-moz-transform-origin:right bottom;-moz-transform:rotate(0);opacity:1;}
+	    100%{-moz-transform-origin:right bottom;-moz-transform:rotate(90deg);opacity:0;}
+	}
+	@-ms-keyframes rotateoutRT{
+	    0%{-ms-transform-origin:right bottom;-ms-transform:rotate(0);opacity:1;}
+	    100%{-ms-transform-origin:right bottom;-ms-transform:rotate(90deg);opacity:0;}
+	}
+	@keyframes rotateoutRT{
+	    0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+	    100%{transform-origin:right bottom;transform:rotate(90deg);opacity:0;}
+	}
+
+	/* 转出-向右下 */
+	.a-rotateoutRB{
+		-webkit-animation-name:rotateoutRB;
+		-moz-animation-name:rotateoutRB;
+		-ms-animation-name:rotateoutRB;
+		animation-name:rotateoutRB;
+	}
+	/* 转出-向右下 */
+	@-webkit-keyframes rotateoutRB{
+	    0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
+	    100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(-90deg);opacity:0;}
+	}
+	@-moz-keyframes rotateoutRB{
+	    0%{-moz-transform-origin:right bottom;-moz-transform:rotate(0);opacity:1;}
+	    100%{-moz-transform-origin:right bottom;-moz-transform:rotate(-90deg);opacity:0;}
+	}
+	@-ms-keyframes rotateoutRB{
+	    0%{-ms-transform-origin:right bottom;-ms-transform:rotate(0);opacity:1;}
+	    100%{-ms-transform-origin:right bottom;-ms-transform:rotate(-90deg);opacity:0;}
+	}
+	@keyframes rotateoutRB{
+	    0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+	    100%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0;}
+	}
+	
+</style>
+
+<body>
+	<div class="content">
+		<div class="box a-rotateout"></div>
+		<div class="box a-rotateoutLT"></div>
+		<div class="box a-rotateoutLB"></div>
+		<div class="box a-rotateoutRT"></div>
+		<div class="box a-rotateoutRB"></div>
+	</div>
+	
+</body>
+</html>
